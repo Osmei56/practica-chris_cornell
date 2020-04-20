@@ -14,10 +14,8 @@ body {
 
 .container {
   max-width: 1200px;
-  width: 80%;
-  margin: 0 auto;
-  height: 150px;
-  margin-bottom: 1rem;
+  width: 90%;
+  margin: 1rem auto;
 }
 
 .header {
@@ -40,7 +38,6 @@ body {
 }
 
 .ul-nav__link { 
-  /* display: block; */
   background-color: yellow;
   width: 10rem;
   height: 3rem;
@@ -60,13 +57,22 @@ body {
 }
 
 .hero {
-  margin-top: 2rem;
+  max-width: 1200px;
+  width: 90vw;
+  height: 70vh;
+  margin: 1rem auto;
   display: flex;
+  border-bottom: 1px solid yellow;
+}
+
+.hero__bg-container {
+  flex-basis: 50%;
+  height: 100%;
 }
 
 .hero__bg {
   flex-basis: 50%;
-  height: 70vh;
+  height: 100%;
   background-image: url(../img/chris-cronell.jpg);
   background-size: cover;
   background-position: center;
@@ -75,34 +81,35 @@ body {
 
 .hero__biography {
   flex-basis: 50%;
+  height: 100%;
   margin-left: 1rem;
 }
 
 .hero__description {
   color: rgb(112, 104, 104);
   line-height: 1.7;
+  overflow: hidden;
 }
 
-.btn-container {
+.hero__btn-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 1rem;
 }
+
 .hero__btn {
   display: block;
+  width: 10rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: yellow;
-  width: 10rem;
-  height: 3rem;
   text-decoration: none;
-  border: none;
-  outline: none;
   border-radius: 15px;
   text-align: right;
-  margin-top: .5rem;
-  text-align: right;
+  margin-right: 1rem;
 }
 
 .hero__btn:hover {
@@ -122,30 +129,36 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem;
+  max-width: 1200px;
+  width: 90%;
+  margin: 2rem auto;
+  height: 30vh;
 }
 
-.footer__container {
+.footer__details {
   flex-basis: 33%;
+  height: 100%;
+  padding: 1rem;
 }
 
-.footer__container .footer__link {
+.footer__details .footer__link {
   display: block;
   text-decoration: none;
-  padding: 1rem 0;
+  padding: .5rem 0;
   color: #fff;
 }
 
 .footer__link:hover {
   color: yellow;
-  
 }
 
 .footer__contact {
   flex-basis: 33%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .footer__contact h3:hover {
@@ -156,9 +169,11 @@ h1 {
 
 .footer__social-icons {
   flex-basis: 33%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .fab {
